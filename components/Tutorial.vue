@@ -344,7 +344,9 @@ a {
     --background-text: rgba(243, 243, 243, 1);
     --back-icon: rgba(112, 112, 112, 40%);
 }
-
+.flex{
+    display: flex !important;
+}
 .bg-main-color {
     background-color: var(--main-color);
 }
