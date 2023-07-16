@@ -21,7 +21,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@fortawesome/fontawesome-free/css/all.css'
+    '@fortawesome/fontawesome-free/css/all.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -35,6 +35,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+   
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -43,5 +44,25 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extend(config, { isDev, isClient }) {
+      if (isClient) {
+        config.module.rules.push({
+          test: /\.(png|jpe?g|gif|svg|webp)$/,
+          loader: "file-loader",
+          exclude: /(node_modules)/,
+          options: {
+            name: "[path][name].[ext]?[hash]",
+          },
+        });
+        config.module.rules.push({
+          test: /\.scss$/,
+          use: ["style-loader", "css-loader", "sass-loader"],
+        });
+        config.module.rules.push({
+          test: /\.swiper$/,
+          use: ["babel-loader"],
+        });
+      }
+    },
   }
 }

@@ -2,68 +2,82 @@
 <template>
   <div>
     <!--Start Header-->
-    <header>
-      <div class="container flex px-20 justify-between my-5">
-        <div class="search justify-start flex w-9/12 gap-x-0.5">
-          <div
-            class="flex w-1/5 items-center gap-x-2 text-Cmain pr-3 bg-red-200 rounded-s-md"
-          >
-            <p>مزاد مباشر متعدد</p>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <div
-            class="w-9/12 items-center pr-5 justify-between rounded-e-md flex bg-red-200"
-          >
-            <p>ابحث هنا</p>
-            <i
-              class="fa-solid text-white fa-magnifying-glass bg-main-color py-3 rounded-md px-5"
-            ></i>
-          </div>
-        </div>
-        <div class="logo flex justify-end w-1/5">
-          <img src="images/Untitled.png" alt="" />
-        </div>
+<header>
+  <div class="container flex flex-col md:flex-row px-5 md:px-20 justify-between my-5">
+    <div class="search flex w-full md:w-9/12 gap-x-0.5">
+      <div class="flex w-full md:w-1/5 items-center gap-x-2 text-Cmain pr-3 bg-red-200 rounded-s-md">
+        <p>مزاد مباشر متعدد</p>
+        <i class="fa-solid fa-chevron-down"></i>
       </div>
-    </header>
+      <input class="w-full md:w-9/12 items-center pr-5 justify-between rounded-e-md flex bg-red-200" placeholder="ابحث هنا" />
+      <i class="fa-solid text-white fa-magnifying-glass bg-main-color py-3 rounded-md px-5"></i>
+    </div>
+    <div class="logo flex justify-center md:justify-end w-full md:w-1/5 mt-5 md:mt-0">
+      <img src="images/Untitled.png" alt="" />
+    </div>
+  </div>
+</header>
+
     <!--End Header-->
     <!--Start Navbar-->
-    <div class="navbar text-white bg-gradient">
-      <div class="container flex px-20 justify-between py-5">
-        <ul class="flex justify-between w-4/12 text-lg">
-          <li>الرئيسية</li>
-          <li>التصنيفات</li>
-          <li>مشترياتي</li>
-          <li>حسابي</li>
-        </ul>
-        <div class="flex w-1/4 justify-end">
-          <div class="icons w-2/5 justify-around text-xl items-center flex">
-            <img src="images/price_change_black_24dp.svg" alt="" />
-            <i class="fa-regular fa-bell"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          <div
-            class="flex items-center gap-x-1 text-white px-3 bg-gold rounded-md"
-          >
-            <p>العربية</p>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-        </div>
+   <div class="navbar text-white bg-gradient">
+  <div class="container flex flex-col md:flex-row px-5 md:px-20 justify-between py-5">
+    <ul class="flex justify-between w-full md:w-4/12 text-lg">
+      <li>الرئيسية</li>
+      <li>التصنيفات</li>
+      <li>مشترياتي</li>
+      <li>حسابي</li>
+    </ul>
+    <div class="flex w-full md:w-1/4 justify-between mt-5 md:mt-0">
+      <div class="icons w-1/3 md:w-2/5 justify-around text-xl items-center flex">
+        <img src="images/price_change_black_24dp.svg" alt="" />
+        <i class="fa-regular fa-bell"></i>
+        <i class="fa-solid fa-heart"></i>
+      </div>
+      <div class="flex items-center gap-x-1 text-white px-3 bg-gold rounded-md">
+        <p>العربية</p>
+        <i class="fa-solid fa-chevron-down"></i>
       </div>
     </div>
+  </div>
+</div>
+
+
+
     <!--End Navbar-->
     <!--Start Main-->
-    <div class="main mt-10">
-      <div class="container flex justify-center px-24">
-        <div class="w-1/12 flex flex-col items-center gap-y-1 pt-5">
-          <i class="fa-solid fa-chevron-up py-4"></i>
-          <img src="images/car.webp" class="w-10/12 h-16 rounded-md" alt="" />
-          <img src="images/car.webp" class="w-10/12 h-16 rounded-md" alt="" />
-          <img src="images/car.webp" class="w-10/12 h-16 rounded-md" alt="" />
-          <img src="images/car.webp" class="w-10/12 h-16 rounded-md" alt="" />
-          <img src="images/car.webp" class="w-10/12 h-16 rounded-md" alt="" />
-          <i class="fa-solid fa-chevron-down py-4"></i>
+    <div class="main mt-10 sm:px-6 md:px-12 lg:px-24">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+        <div class="col-span-1 md:col-span-1 pt-5 gap-4">
+
+        <div class="flex flex-row justify-center md:flex-col" >
+            
+            <i class="fa-solid fa-chevron-up py-4"></i>
+            <img
+              src="images/car.webp"
+              class="w-full sm:w-auto md:w-10/12 h-16 rounded-md mb-4 sm:mb-0 md:mb-4"
+              alt=""
+            />
+            <img
+              src="images/car.webp"
+              class="w-full sm:w-auto md:w-10/12 h-16 rounded-md mb-4 sm:mb-0 md:mb-4"
+              alt=""
+            />
+            <img
+              src="images/car.webp"
+              class="w-full sm:w-auto md:w-10/12 h-16 rounded-md mb-4 sm:mb-0 md:mb-4"
+              alt=""
+            />
+            <img
+              src="images/car.webp"
+              class="w-full sm:w-auto md:w-10/12 h-16 rounded-md mb-4 sm:mb-0 md:mb-4"
+              alt=""
+            />
+          
+            <i class="fa-solid fa-chevron-down py-4"></i>
         </div>
-        <div class="w-8/12">
+        </div>
+        <div class="col-span-1 md:col-span-8">
           <div class="bg-white rounded-md drop-shadow-2xl px-2 py-3">
             <div
               class="w-12/12 h-96 pt-2"
@@ -131,8 +145,10 @@
               <h4 class="text-2xl">شراء مجموعة من السيارات من موديلا 1990</h4>
               <p class="text-xs">code 1234</p>
             </div>
-            <div class="flex justify-between items-center pt-5 pr-4">
-              <div class="flex justify-between items-center gap-x-2">
+            <div
+              class="flex lg:justify-between items-center pt-5 pr-4 flex-wrap sm:justify-center gap-4"
+            >
+              <div class="flex justify-between items-center gap-x-2 flex-wrap">
                 <p class="px-3 py-2 bg-red-200 text-Cmain rounded-md">10020+</p>
                 <p class="px-3 py-2 bg-red-200 text-Cmain rounded-md">10020+</p>
                 <p class="px-3 py-2 bg-red-200 text-Cmain rounded-md">10020+</p>
@@ -163,8 +179,65 @@
               <img src="images/Group5452.svg" alt="" />
             </div>
           </div>
+          <div
+            class="bg-white rounded-md drop-shadow-2xl px-5 py-3 mt-10 text-md"
+          >
+            <h5 class="text-2xl mb-2">تفاصيل المزاد</h5>
+            <div class="flex justify-between py-2">
+              <p><i class="fa-solid fa-location-dot"></i> Egypt, Mansoura</p>
+              <p>200 قطعة</p>
+            </div>
+            <div class="flex justify-between py-2">
+              <p><i class="fa-solid fa-location-dot"></i> البيع لاعلى سعر</p>
+              <p class="text-orange-400">
+                <i class="fa-solid fa-microphone"></i> صوت
+              </p>
+            </div>
+            <p class="py-2">
+              <i class="fa-brands fa-windows"></i> منتجات متعددة
+            </p>
+
+            <hr class="py-2" />
+            <div>
+              <h1 class="font-bold text-xl py-2" >وصف</h1>
+              <p>
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص
+                العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي
+                أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه
+                الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة
+                حقيقية لتصميم الموقع. ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة
+                على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن
+                يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى
+                يتحدث عنه التصميم فيظهر بشكل لا يليق. هذا النص يمكن أن يتم
+                تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم،
+                غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+              </p>
+            </div>
+            <hr class="my-4" />
+            <div>
+              <h1 class="font-bold text-xl py-2" >سياسة الاسترجاع والاستبدال</h1>
+              <p>
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص
+                العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي
+                أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه
+                الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة
+                حقيقية لتصميم الموقع. ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة
+                على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن
+                يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى
+                يتحدث عنه التصميم فيظهر بشكل لا يليق. هذا النص يمكن أن يتم
+                تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم،
+                غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="w-4/12 px-5">
+        <div class="col-span-1 md:col-span-3">
           <div class="py-3 bg-white rounded-md drop-shadow-2xl px-2">
             <div
               class="flex justify-between bg-neutral-700 p-3 text-white rounded-md"
@@ -302,77 +375,100 @@
               <p class="text-xl font-bold">5000</p>
             </div>
           </div>
-          <!--
 
-                <div class="mt-12 bg-white rounded-md drop-shadow-2xl px-2">
-                    <h5 class="py-3">
-
-                        المزادات المفضلة
-                    </h5>
-                    <div class="flex gap-x-1 my-5">
-                        <div class="  w-5/12 pt-2 h-24 rounded-md" style="
-                            background-image: url(./images/cars.webp);
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;">
-
-                            <i
-                                class="fa-solid fa-heart bg-white text-red-700 mr-2 rounded-full w-9 h-9 flex justify-center items-center "></i>
-                            <p class="text-xs w-16 text-white bg-orange-400 mt-2 py-1 text-center">مزاد خاص</p>
-                        </div>
-                        <div class="flex flex-col w-7/12">
-                            <p class="text-sm ">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed est necessitatibus rem?
-                            </p>
-                            <div class="flex justify-between items-center pt-2">
-                                <p class="text-sm">السعر</p>
-                                <p class=" text-indigo-800 font-bold">$500</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex gap-x-1 my-5">
-                        <div class="  w-5/12 pt-2 h-24 rounded-md" style="
-                            background-image: url(./images/cars.webp);
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;">
-
-                            <i
-                                class="fa-solid fa-heart bg-white text-red-700 mr-2 rounded-full w-9 h-9 flex justify-center items-center "></i>
-                            <p class="text-xs w-16 text-white bg-orange-400 mt-2 py-1 text-center">مزاد خاص</p>
-                        </div>
-                        <div class="flex flex-col w-7/12">
-                            <p class="text-sm ">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed est necessitatibus rem?
-                            </p>
-                            <div class="flex justify-between items-center pt-2">
-                                <p class="text-sm">السعر</p>
-                                <p class=" text-indigo-800 font-bold">$500</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex gap-x-1 my-5">
-                        <div class="  w-5/12 pt-2 h-24 rounded-md" style="
-                            background-image: url(./images/cars.webp);
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;">
-
-                            <i
-                                class="fa-solid fa-heart bg-white text-red-700 mr-2 rounded-full w-9 h-9 flex justify-center items-center "></i>
-                            <p class="text-xs w-16 text-white bg-orange-400 mt-2 py-1 text-center">مزاد خاص</p>
-                        </div>
-                        <div class="flex flex-col w-7/12">
-                            <p class="text-sm ">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed est necessitatibus rem?
-                            </p>
-                            <div class="flex justify-between items-center pt-2">
-                                <p class="text-sm">السعر</p>
-                                <p class=" text-indigo-800 font-bold">$500</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
+          <div class="mt-12 bg-white rounded-md drop-shadow-2xl p-2">
+            <h5 class="py-3 font-bold">المزادات المفضلة</h5>
+            <div class="flex gap-x-1 my-5">
+              <div
+                class="w-5/12 pt-2 h-24 rounded-md"
+                style="
+                  background-image: url(./images/cars.webp);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <i
+                  class="fa-solid fa-heart bg-white text-red-700 mr-2 rounded-full w-9 h-9 flex justify-center items-center"
+                ></i>
+                <p
+                  class="text-xs w-16 text-white bg-orange-400 mt-2 py-1 text-center"
+                >
+                  مزاد خاص
+                </p>
+              </div>
+              <div class="flex flex-col w-7/12">
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+                  est necessitatibus rem?
+                </p>
+                <div class="flex justify-between items-center pt-2">
+                  <p class="text-sm">السعر</p>
+                  <p class="text-indigo-800 font-bold px-4">$500</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-x-1 my-5">
+              <div
+                class="w-5/12 pt-2 h-24 rounded-md"
+                style="
+                  background-image: url(./images/cars.webp);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <i
+                  class="fa-solid fa-heart bg-white text-red-700 mr-2 rounded-full w-9 h-9 flex justify-center items-center"
+                ></i>
+                <p
+                  class="text-xs w-16 text-white bg-orange-400 mt-2 py-1 text-center"
+                >
+                  مزاد خاص
+                </p>
+              </div>
+              <div class="flex flex-col w-7/12">
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+                  est necessitatibus rem?
+                </p>
+                <div class="flex justify-between items-center pt-2">
+                  <p class="text-sm">السعر</p>
+                  <p class="text-indigo-800 font-bold px-4">$500</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-x-1 my-5">
+              <div
+                class="w-5/12 pt-2 h-24 rounded-md"
+                style="
+                  background-image: url(./images/cars.webp);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <i
+                  class="fa-solid fa-heart bg-white text-red-700 mr-2 rounded-full w-9 h-9 flex justify-center items-center"
+                ></i>
+                <p
+                  class="text-xs w-16 text-white bg-orange-400 mt-2 py-1 text-center"
+                >
+                  مزاد خاص
+                </p>
+              </div>
+              <div class="flex flex-col w-7/12">
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+                  est necessitatibus rem?
+                </p>
+                <div class="flex justify-between items-center pt-2">
+                  <p class="text-sm">السعر</p>
+                  <p class="text-indigo-800 font-bold px-4">$500</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -420,8 +516,8 @@ a {
   --background-text: rgba(243, 243, 243, 1);
   --back-icon: rgba(112, 112, 112, 40%);
 }
-.flex{
-    display: flex !important;
+.flex {
+  display: flex !important;
 }
 .bg-main-color {
   background-color: var(--main-color);
